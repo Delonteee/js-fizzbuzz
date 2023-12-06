@@ -32,5 +32,9 @@ a {
 }
 
 .my-margin-top {
-    margin-top: 150px;
+    margin-top: 50px;
+}
+
+.my-width {
+    width: 78px;
 }

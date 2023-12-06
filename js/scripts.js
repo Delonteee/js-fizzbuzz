@@ -20,26 +20,40 @@
 
 let i = 0;
 
-
+const squareContainer = document.getElementById('fizz-buzz');
 
 for (i = 1; i <= 100; i++) {
+
+    const square = document.createElement('div');
+
+    square.classList.add('col-2', 'py-4', 'm-2', 'rounded','text-center', 'border', 'border-black', 'border-3');
 
     if ((i % 3) == 0 && (i % 5) == 0) {
 
         console.log('i =', i, 'FizzBuzz', typeof i);
+        square.classList.add('bg-success');
+        square.append('FizzBuzz');
 
     } else if ((i % 5) == 0) {
 
-        console.log('i =', i, 'Fizz', typeof i);
+        console.log('i =', i, 'Buzz', typeof i);
+        square.classList.add('bg-warning');
+        square.append('Buzz');
 
     } else if ((i % 3) == 0) {
 
-        console.log('i =', i, 'Buzz', typeof i);
+        console.log('i =', i, 'Fizz', typeof i);
+        square.classList.add('bg-danger');
+        square.append('Fizz');
 
     } else {
 
         console.log('i =', i, '----', typeof i);
+        square.classList.add('bg-primary');
+        square.append(i);
 
     }
+
+    squareContainer.append(square);
 
 }
