@@ -17,3 +17,27 @@
     inserito sia un numero, un fizz, un buzz o un fizzbuzz.
     Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
  */
+
+
+
+for (i = 1; i <= 100; i++) {
+
+    if ((i % 3) == 0 && (i % 5) != 0) {
+
+        console.log('i =', i, 'Fizz', typeof i);
+
+    } else if ((i % 3) != 0 && (i % 5) == 0) {
+
+        console.log('i =', i, 'Buzz', typeof i);
+
+    } else if ((i % 3) == 0 && (i % 5) == 0) {
+
+        console.log('i =', i, 'FizzBuzz', typeof i);
+
+    } else {
+
+        console.log('i =', i, '----', typeof i);
+
+    }
+
+}
